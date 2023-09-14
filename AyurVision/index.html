@@ -25,23 +25,20 @@
               <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ms-auto mb-2 mb-lg-0 "> 
                     <!-- ms-auto is for making these buttons to right  --> 
-                  <!-- <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Home</a>
-                  </li> -->
                   <li class="nav-item">
-                    <a class="nav-link active text-light" href="#">   Home   </a>
+                    <a class="nav-link active text-light " href="#">   Home   </a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link active text-light " href="#">   AboutUs   </a>
+                    <a class="nav-link active  text-light  " href="#AboutUs">   AboutUs   </a>
                   </li>
                   <li class="nav-item ">
-                    <a class="nav-link active text-light" href="#">   How it Works   </a>
+                    <a class="nav-link active text-light    " href="#HowitWorks">   How it Works   </a>
                   </li>  
                   <li class="nav-item ">
-                    <a class="nav-link active text-light" href="#">   FAQs   </a>
+                    <a class="nav-link active text-light " href="#faqs">   FAQs   </a>
                   </li> 
                   <li class="nav-item">
-                    <a class="nav-link active text-light" href="#">  ContactUs  </a>
+                    <a class="nav-link active text-light  " href="#ContactUs">  ContactUs  </a>
                   </li> 
               </div>
             </div>
@@ -55,17 +52,17 @@
            <div class="container">
               <div class="row">
 
-                <div class="col-md-12 col-lg-6">
-                  <p class="banner-title">Welcome to our revolutionary solution for Ayurvedic Pharmaceutics Industry  </p>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec feugiat tellus diam, quis condimentum sapien laoreet a. Quisque mollis ligula urna, eget sollicitudin erat gravida id.   Phasellus dignissim efficitur egestas. Integer consequat dignissim augue vitae tempus. Nullam quis
+                <div class="col-md-12 col-lg-7">
+                  <p class="banner-title text-center">Welcome to our revolutionary solution for Ayurvedic Pharmaceutics Industry  </p>
+                  <p class=" text text-center  " >Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec feugiat tellus diam, quis condimentum sapien laoreet a. Quisque mollis ligula urna, eget sollicitudin erat gravida id.   Phasellus dignissim efficitur egestas. Integer consequat dignissim augue vitae tempus. Nullam quis
                     interdum tortor, sed ultricies lorem. Donec dictum odio non augue dapibus porttitor.Maecenas dapibus egestas leo luctus convallis.
                     interdum tortor, sed ultricies lorem. Donec dictum odio non augue dapibus porttitor.Maecenas dapibus egestas leo luctus convallis</p>
                     
-                   <p> <button type="button" class="btn btn-lg">Solution</button> </p>
+                   <p class="text-center"> <button type="button" class="btn btn-lg">Solution</button> </p>
 
                 </div> 
 
-                <div class="col-md-12 col-lg-6" class="banner-img " >
+                <div class="col-md-12 col-lg-5" class="banner-img " >
                     <img class="image-fluid "  src="./images/rishiayur_nobg.png" alt="ayurvedic practice">
                 </div>
 
@@ -101,7 +98,7 @@
             <div class="container ">
                 <div class="row">
                    
-                    <div class=" col-md-12 col-lg-6">
+                    <div class=" col-md-12 col-lg-7">
                         <h1 class="text-center title">How it Works?</h1>
                         <h5>                         
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec feugiat tellus diam, quis condimentum sapien laoreet a. Quisque mollis ligula urna, eget sollicitudin erat gravida id. Phasellus dignissim efficitur egestas. Integer consequat dignissim augue vitae tempus. Nullam quis interdum tortor, sed ultricies lorem. Donec dictum odio non augue dapibus porttitor.Maecenas dapibus egestas leo luctus convallis. interdum tortor, sed ultricies lorem. Donec dictum odio non augue dapibus porttitor.Maecenas dapibus egestas leo luctus convallis
@@ -109,7 +106,7 @@
                         </h5>
                     </div>
 
-                    <div class="col-md-12 col-lg-6" class="howitworks-img " >
+                    <div class="col-md-12 col-lg-5" class="howitworks-img " >
                         <img class="image-fluid" src="./images/identify2.png" alt="ai image">
                     </div>
                 </div>
@@ -119,49 +116,166 @@
 
 
         <!-- faqs -->
-        <div class="accordion" id="accordionPanelsStayOpenExample">
-            <div class="accordion-item">
-              <h2 class="accordion-header" id="panelsStayOpen-headingOne">
-                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
-                  Accordion Item #1
-                </button>
-              </h2>
-              <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingOne">
-                <div class="accordion-body">
-                  <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+
+        <section id="faqs">
+           
+            <div class="accordion" id="accordionExample">
+
+                <h1 class="text-center">FAQs</h1>
+                <div class="accordion-item first ">
+                  <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                      what is your region
+                    </button>
+                  </h2>
+                  <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <strong>This is the third item's accordion body.</strong>                    </div>
+                  </div>
                 </div>
-              </div>
-            </div>
-            <div class="accordion-item">
-              <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
-                  Accordion Item #2
-                </button>
-              </h2>
-              <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingTwo">
-                <div class="accordion-body">
-                  <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+
+
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        what is your religion
+                    </button>
+                  </h2>
+                  <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <strong>This is the third item's accordion body.</strong>                    </div>
+                  </div>
                 </div>
-              </div>
-            </div>
-            <div class="accordion-item">
-              <h2 class="accordion-header" id="panelsStayOpen-headingThree">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
-                  Accordion Item #3
-                </button>
-              </h2>
-              <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingThree">
-                <div class="accordion-body">
-                  <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+
+
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        what is your gender
+                    </button>
+                  </h2>
+                  <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <strong>This is the third item's accordion body.</strong>                    </div>
+                  </div>
                 </div>
-              </div>
+
+
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingFour">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                        what is your caste 
+                      </button>
+                    </h2>
+                    <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+                      <div class="accordion-body">
+                        <strong>This is the third item's accordion body.</strong>                      </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingFive">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                        what is your political inclination
+                      </button>
+                    </h2>
+                    <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordionExample">
+                      <div class="accordion-body">
+                        <strong>This is the third item's accordion body.</strong>                      </div>
+                    </div>
+                </div>
+                
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingSix">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                       Let me judge you....
+                      </button>
+                    </h2>
+                    <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix" data-bs-parent="#accordionExample">
+                      <div class="accordion-body">
+                        <strong>This is the third item's accordion body.</strong>
+                      </div>
+                    </div>
+                </div>
             </div>
-          </div>
-  
+         </section>
+
+
+         <section id="ContactUs">
+            <section class="mb-4">
+               
+                <div class="row">
+                    <h2 class="h1-responsive font-weight-bold text-center my-4">Contact us</h2>
+                <p class="text-center w-responsive mx-auto mb-5">Do you have any questions? Please do not hesitate to contact us directly. Our team will come back to you within a matter of hours to help you.</p>
+                    <div class="col-md-7 mb-md-0 mb-5">
+                        <form id="contact-form" name="contact-form" action="" method="POST">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="md-form mb-0">
+                                        <input type="text" id="name" name="name" class="form-control">
+                                        <label for="name" class="">Your Name</label>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="md-form mb-0">
+                                        <input type="text" id="email" name="email" class="form-control">
+                                        <label for="email" class="">Your Email</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="md-form mb-0">
+                                        <input type="text" id="subject" name="subject" class="form-control">
+                                        <label for="subject" class="">Subject</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="md-form">
+                                        <textarea type="text" id="message" name="message" rows="2" class="form-control md-textarea"></textarea>
+                                        <label for="message">Your Message</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+
+                        <div class="text-center text-md-left">
+                            <a class="btn btn-primary" onclick="document.getElementById('contact-form').submit();">Send</a>
+                        </div>
+                        <div class="status"></div>
+                    </div>
 
 
 
+                    <div class="col-md-5 text-center">
+                        <ul class="list-unstyled mb-0">
+                            <li><i class="fas fa-map-marker-alt fa-2x h1"></i>
+                                <h1>Info</h1>
+                            </li>
+                            <li><i class="fas fa-map-marker-alt fa-2x"></i>
+                                <p>Manipal Institute of Technology</p>
+                            </li>
+                            <li><i class="fas fa-phone mt-4 fa-2x"></i>
+                                <p>+91 891989098</p>
+                            </li>
+                            <li><i class="fas fa-envelope mt-4 fa-2x"></i>
+                                <p>contact@AyurVision.com</p>
+                            </li>
+                        </ul>
+                </div>
 
+
+              
+                <div class="row contactinfo">
+                
+                 </div>
+            
+
+            </section>
+
+         </section>
     </div>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
          integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" 

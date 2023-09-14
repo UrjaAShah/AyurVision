@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Solution</title>
+    <link rel="stylesheet" href="solutionstyles.css">
+</head>
+<body>
+    <section id="banner">
+        <div class="container">
+           <div class="row">
+
+             <div class="col-md-12 col-lg-7">
+               <p class="banner-title text-center">Solution </p>
+               <p class=" text text-center  " >Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec feugiat tellus diam, quis condimentum sapien laoreet a. Quisque mollis ligula urna, eget sollicitudin erat gravida id.   Phasellus dignissim efficitur egestas. Integer consequat dignissim augue vitae tempus. Nullam quis
+                 interdum tortor, sed ultricies lorem. Donec dictum odio non augue dapibus porttitor.Maecenas dapibus egestas leo luctus convallis.
+                 interdum tortor, sed ultricies lorem. Donec dictum odio non augue dapibus porttitor.Maecenas dapibus egestas leo luctus convallis</p>
+                 
+    
+                <h1>
+                    <button style="color:rgb(162, 157, 157); height: 50px; width: 200px; border-radius: 20px; font-size: large; background-color: black;">Search by name</button>
+                </h1>
+                <input style="height: 20px; width: 200px; background-color: D9D9D9; margin-top: 30px; color: black;" type="text" value="enter plant name">   
+                <form action="/process_image" method="POST" enctype="multipart/form-data">
+                    <!-- Input field for selecting an image -->
+                    <input type="file" name="image" accept="image/*" required style="color: rgb(162, 157, 157); height: 50px; width: 200px; border-radius: 20px; font-size: large; background-color: black;">
+                    <!-- Display the selected image -->
+                    <img id="selected-image" src="#" alt="Selected Image" style="display: none; max-width: 300px; max-height: 300px;">
+                    <!-- JavaScript to display the image -->
+                    <script>
+                        function displayImage(input) {
+                            var selectedImage = document.getElementById('selected-image');
+                            if (input.files && input.files[0]) {
+                                var reader = new FileReader();
+                                reader.onload = function(e) {
+                                    selectedImage.style.display = 'block';
+                                    selectedImage.src = e.target.result;
+                                };
+                                reader.readAsDataURL(input.files[0]);
+                            }
+                        }
+                        
+                        // Attach the function to the file input's change event
+                        var fileInput = document.querySelector('input[type="file"]');
+                        fileInput.addEventListener('change', function() {
+                            displayImage(this);
+                        });
+                    </script>
+            
+                    <!-- Submit button to upload and process the image -->
+                    <input style="height: 50px; margin-top: 150px; width: 200px;" type="submit" value="Submit">
+                </form>
+            
+             </div> 
+
+             
+
+
+           </div>
+         </div>
+         
+
+     </section>
+
+    <div class="parallax-bg"></div>
+    </body>
+</html>
